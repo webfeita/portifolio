@@ -1,0 +1,254 @@
+:root {
+    /* Fundos: página e cards */
+    --cor-fundo: #0f1115;
+    --cor-card: #1a1d24;
+
+    /* Textos: principal e descrições */
+    --cor-texto: #f3f4f6;
+    --cor-texto-secundario: #b5bdca;
+
+    /* Links, botões e detalhes */
+    --cor-destaque: #70a5ff;
+    --cor-destaque-hover: #a3c5ff;
+    --cor-texto-botao: #0f1115;
+
+    /* Bordas discretas dos cards */
+    --cor-borda: #343b49;
+
+    /* Cabeçalho e menu */
+    --cor-cabecalho: #111722;
+    --cor-menu: #1b293e;
+    --cor-link-menu: #e2eaff;
+    --cor-link-menu-hover: #a3c5ff;
+
+    /* Seções e rodapé */
+    --cor-secao-alternativa: #141923;
+    --cor-contato: #182231;
+    --cor-rodape: #0b0e14;
+
+    /* Títulos e cards */
+    --cor-titulo: #ffffff;
+    --cor-card-hover: #252b38;
+
+    /* Botões */
+    --cor-botao: #70a5ff;
+    --cor-botao-hover: #a3c5ff;
+
+    /* Detalhes opcionais */
+    --cor-detalhe-roxo: #c4b5fd;
+    --cor-detalhe-verde: #6ee7b7;
+    --cor-detalhe-rosa: #f9a8d4;
+    --cor-detalhe-laranja: #fdba74;
+    --cor-foco: #f5cf72;
+    --cor-destaque-escuro: #1e293b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-cabecalho);
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.list a {
+    color: var(--cor-texto-botao);
+    text-decoration: none;
+    background-color: var(--cor-botao);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.list a:hover {
+    background-color: var(--cor-botao-hover)
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 60px 20px;
+    background-color: var(--cor-secao-alternativa);
+    margin: 20px;
+    border: solid var(--cor-borda);
+
+}
+
+.apresentacao h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.apresentacao a {
+    text-decoration: none;
+    color: var(--cor-texto-botao);
+    background-color: var(--cor-botao);
+    padding: 20px;
+    border-radius: 12px;
+    font-size: medium;
+}
+
+.apresentacao a:hover {
+    background-color: var(--cor-botao-hover);
+
+}
+
+.apresentacao p {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    line-height: 1.6;
+    color: var(--cor-texto-secundario);
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: var(--cor-card);
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 750px;
+    line-height: 1.9;
+    color: var(--cor-texto-secundario);
+}
+
+#sobre h2 {
+    color: var(--cor-texto);
+}
+
+#conhecimentos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#conhecimentos h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #9b91aa;
+    color: #0c121d;
+    height: 100px;
+}
+
+
+.list-conhecimento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card-conhecimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor-card);
+    padding: 40px;
+    gap: 20px;
+    border-radius: 30px 20px;
+    width: 220px;
+}
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    background-color: #9b91aa;
+    color: #0c121d;
+}
+
+.card-projetos {
+    background-color: var(--cor-card);
+    text-align: center;
+    line-height: 1.09;
+    padding: 50px 50px;
+    font-size: 25px;
+
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#contato p {
+    color: var(--cor-texto-secundario);
+    font-size: 18px;
+}
+
+.links-contatos img {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    transition: transform 0.3s;
+
+
+}
+
+.links-contatos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--cor-contato);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.links-contatos img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--cor-rodape);
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+}
